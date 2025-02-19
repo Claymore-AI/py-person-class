@@ -5,7 +5,6 @@ class Person:
         self.name = name
         self.age = age
         Person.people[name] = self
-    pass
 
 
 def create_person_list(people: list) -> list:
@@ -22,4 +21,3 @@ def create_person_list(people: list) -> list:
         if "husband" in person and person["husband"] is not None:
             person_instance.husband = Person.people[person["husband"]]
     return list_people
-    pass
